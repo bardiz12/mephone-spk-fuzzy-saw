@@ -25,6 +25,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://127.0.0.1:8123/';
 
+//HEROKU
+if(getenv('CLEARDB_DATABASE_URL')){
+    $config['base_url'] = 'https://mephone.herokuapp.com/';
+}
 /*
 |--------------------------------------------------------------------------
 | Index File
