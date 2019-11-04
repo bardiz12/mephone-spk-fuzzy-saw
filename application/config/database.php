@@ -94,3 +94,11 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+if(getenv("CLEARDB_DATABASE_URL")){
+	$__CLEARDB = getenv("CLEARDB_DATABASE_URL");
+	$db['hostname'] = $__CLEARDB["host"];
+	$db['username'] = $__CLEARDB["user"];
+	$db['password'] = $__CLEARDB["pass"];
+	$db['database'] = substr($__CLEARDB["path"], 1);
+}
