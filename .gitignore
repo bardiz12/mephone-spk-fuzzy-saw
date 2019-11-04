@@ -1,2 +1,2 @@
 /vendor
-/application/cache
+/application/cache/*
