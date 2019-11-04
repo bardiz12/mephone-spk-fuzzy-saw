@@ -1,2 +1,3 @@
-/vendor
-/application/cache/*
+vendor
+application/cache/*
+!application/cache/.keep
