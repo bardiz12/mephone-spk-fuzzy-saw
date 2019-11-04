@@ -9,7 +9,7 @@ class Home extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->blade = new Blade(APPPATH.'/blade_views', APPPATH.'/cache');
+        $this->blade = new Blade(APPPATH.'/blade_views', APPPATH.'cache');
         $this->params = [
             ['title'=>"Harga Hp",
             'name'=>"harga"],
