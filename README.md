@@ -32,7 +32,12 @@ Project ini dibuat pada saat saya semester 3 untuk memenuhi tugas Logika Fuzzy. 
     ```
 
 4. import file db.sql ke DBMS MYSQL anda
-5. Jalankan Server<br/>
+5. Update Library yang dibutuhkan dengan Composer:
+    ```bash
+    composer update
+    ```
+
+6. Jalankan Server<br/>
     Jika menggunakan XAMPP/LAMP atau sejenisnya tinggal buka: 
     ```
     http://localhost/folder_project/public/
