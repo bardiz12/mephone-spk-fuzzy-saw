@@ -52,3 +52,6 @@ Project ini dibuat pada saat saya semester 3 untuk memenuhi tugas Logika Fuzzy. 
 1. <a href="https://user-images.githubusercontent.com/25524265/68142817-bd573e00-ff62-11e9-969b-29ccd0d252d9.png" target="_blank">Tampilan awal</a>
 2. <a href="https://user-images.githubusercontent.com/25524265/68142900-e7a8fb80-ff62-11e9-9b65-428c94befd44.png" target="_blank">Tampilan penentuan bobot preferensi</a>
 3. <a href="https://user-images.githubusercontent.com/25524265/68141716-9e57ac80-ff60-11e9-992f-9bc9ede86f26.png" target="_blank">Tampilan Hasil Rekomendasi</a>
+
+## DEMO
+### <a href="https://mephone.herokuapp.com/">https://mephone.herokuapp.com/</a>
