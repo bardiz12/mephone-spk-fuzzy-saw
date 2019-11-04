@@ -97,8 +97,8 @@ $db['default'] = array(
 
 if(getenv("CLEARDB_DATABASE_URL")){
 	$__CLEARDB = parse_url(getenv("CLEARDB_DATABASE_URL"));
-	$db['hostname'] = $__CLEARDB["host"];
-	$db['username'] = $__CLEARDB["user"];
-	$db['password'] = $__CLEARDB["pass"];
-	$db['database'] = substr($__CLEARDB["path"], 1);
+	$db['default']['hostname'] = $__CLEARDB["host"];
+	$db['default']['username'] = $__CLEARDB["user"];
+	$db['default']['password'] = $__CLEARDB["pass"];
+	$db['default']['database'] = substr($__CLEARDB["path"], 1);
 }
