@@ -60,6 +60,8 @@ Inside container
 composer run app-init
 php index.php migrate
 ```
+Open on browser 
+- [http://localhost:8123/](http://localhost:8123/)
 
 ## Screenshot
 1. <a href="https://user-images.githubusercontent.com/25524265/68142817-bd573e00-ff62-11e9-969b-29ccd0d252d9.png" target="_blank">Tampilan awal</a>
