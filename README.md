@@ -57,7 +57,7 @@ docker-compose exec app bash
 ```
 Inside container
 ```bash
-composer run app-init
+composer update
 php index.php migrate
 ```
 Open on browser 
