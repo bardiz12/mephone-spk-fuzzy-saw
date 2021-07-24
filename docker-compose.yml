@@ -12,7 +12,7 @@ services:
       - proxy
     working_dir: /var/www
     ports:
-      - 7777:80
+      - 8123:80
 
   db:
     image: mariadb
@@ -31,7 +31,7 @@ services:
       - db-data:/var/lib/mysql
     command: mysqld --default-storage-engine=MyISAM
     ports:
-      - 7778:3306
+      - 3306:3306
 networks:
   local:
   proxy:
