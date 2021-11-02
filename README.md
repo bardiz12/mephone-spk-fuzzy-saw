@@ -12,6 +12,7 @@ Project ini dibuat pada saat saya semester 3 untuk memenuhi tugas Logika Fuzzy. 
 
 
 ## Instalation
+### Manual Installation
 1. Download project ini melalui zip, atau dengan clone :
     ```bash
     git clone https://github.com/bardiz12/mephone-spk-fuzzy-saw.git
@@ -47,6 +48,20 @@ Project ini dibuat pada saat saya semester 3 untuk memenuhi tugas Logika Fuzzy. 
     php -S 127.0.0.1:8080 -t public/
     ```
     _nb: ganti port 8080 bisa anda ganti sesuai keinginan anda_
+
+### Docker Installation
+Start docker configuration
+```bash
+docker-compose up -d
+docker-compose exec app bash
+```
+Inside container
+```bash
+composer update
+php index.php migrate
+```
+Open on browser 
+- [http://localhost:8123/](http://localhost:8123/)
 
 ## Screenshot
 1. <a href="https://user-images.githubusercontent.com/25524265/68142817-bd573e00-ff62-11e9-969b-29ccd0d252d9.png" target="_blank">Tampilan awal</a>

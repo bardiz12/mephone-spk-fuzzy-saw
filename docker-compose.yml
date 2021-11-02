@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: app-mephone-saw
+    volumes:
+      - ./:/var/www/
+      - ./public:/var/www/html/
+    networks:
+      - local
+      - proxy
+    working_dir: /var/www
+    ports:
+      - 8123:80
+
+  db:
+    image: mariadb
+    container_name: db-mephone-saw
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=indomie
+      - MYSQL_DATABASE=hp
+      - MYSQL_USER=john
+      - MYSQL_PASSWORD=indomie
+      - MYSQL_PORT=3306
+      - MYSQL_ROOT_HOST=%
+    networks:
+      - local
+    volumes:
+      - db-data:/var/lib/mysql
+    command: mysqld --default-storage-engine=MyISAM
+    ports:
+      - 3306:3306
+networks:
+  local:
+  proxy:
+    external: true
+
+volumes:
+  db-data:

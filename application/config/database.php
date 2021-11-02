@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
-$active_group = 'default';
+$active_group = 'docker';
 $query_builder = TRUE;
 
 $db['default'] = array(
@@ -94,6 +94,29 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+$db['docker'] = array(
+    'dsn'	=> '',
+    'hostname' => 'db-mephone-saw:3306',
+    'username' => 'john',
+    'password' => 'indomie',
+    'database' => 'hp',
+    'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt' => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
+);
+
 
 if(getenv("CLEARDB_DATABASE_URL")){
 	$__CLEARDB = parse_url(getenv("CLEARDB_DATABASE_URL"));

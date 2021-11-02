@@ -10,6 +10,11 @@
 		"slack": "https://codeigniterchat.slack.com",
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
+	"script": {
+		"app-init": [
+			"composer install"
+		]
+	},
 	"require": {
 		"php": ">=5.3.7",
 		"jenssegers/blade": "^1.1",
