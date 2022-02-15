@@ -1,16 +1,16 @@
 <header class="masthead bg-warning text-white">
     <div class="container" style="margin-top:-30px">
     
-    <div class="alert alert-danger">{{ $message or 'Require Admin Access' }}</div>
+    <div class="alert alert-danger">{{ $message ?? 'Require Admin Access' }}</div>
     {!! form_open('home/login_admin') !!}
         <center><strong>Account</strong></center>
         <div class="form-group">
         <label for="username">username</label>
-        <input type="text" name="username" id="username" class="form-control" required="" placeholder="username" value="{{ $username or '' }}">
+        <input type="text" name="username" id="username" class="form-control" required="" placeholder="username" value="{{ $username ?? '' }}">
         </div>
         <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" class="form-control" value="{{ $password or '' }}" required="" placeholder="password">
+        <input type="password" name="password" id="password" class="form-control" value="{{ $password ?? '' }}" required="" placeholder="password">
         </div>
         <button class="btn btn-primary pull-right butto-large" type="submit">Login</button>
     {!! form_close() !!}

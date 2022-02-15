@@ -214,7 +214,7 @@ class Home extends CI_Controller {
                     $last = $this->db->insert_id();
                     $config['upload_path']          = APPPATH.'/storage/';
                     $config['file_name']            = $last.".jpg";
-                    $config['allowed_types']        = 'gif|jpg|png';
+                    $config['allowed_types']        = 'gif|jpg|jpeg|png';
                     $config['max_size']             = 1000;
                     //$config['max_width']            = 1024;
                     //$config['max_height']           = 768;

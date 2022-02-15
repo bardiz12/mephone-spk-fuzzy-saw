@@ -1,3 +1,4 @@
 vendor
 application/cache/*
 !application/cache/.keep
+public/sessions/*
